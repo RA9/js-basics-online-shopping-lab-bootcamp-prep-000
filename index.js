@@ -76,7 +76,7 @@ function placeOrder(cardNumber) {
   return msg;
   }
   
-  if(arguments.length === 0){
+  if(arguments === undefined){
     console.log("Sorry, we don't have a credit card on file for you.");
   }
   
