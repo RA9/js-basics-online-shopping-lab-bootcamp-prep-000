@@ -60,7 +60,6 @@ function removeFromCart(item) {
   for(let i = 0; i < cart.length; i++) {
     if(cart[i].itemName == item) {
     cart.splice(i, 1);
-    console.log("me: ", cart.indexOf(item))
     return cart;
   }
   }
@@ -77,7 +76,7 @@ function placeOrder(cardNumber) {
   return msg;
   }
   
-  if(!arguments){
+  if(arguments.length === 0){
     console.log("Sorry, we don't have a credit card on file for you.");
   }
   
