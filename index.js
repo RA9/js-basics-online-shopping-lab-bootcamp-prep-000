@@ -58,7 +58,7 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   if(cart[item]) {
-    cart.splice(item, 1);
+    cart.splice(cart[item], 1);
     return cart;
   }
   return 'That item is not in your cart.'; 
