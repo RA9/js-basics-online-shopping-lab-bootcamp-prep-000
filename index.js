@@ -58,9 +58,10 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   if(cart[item]) {
-    cart[item].splice()
+    cart[item].splice();
+    return cart;
   }
-  return cart;
+  
 }
 
 function placeOrder(cardNumber) {
